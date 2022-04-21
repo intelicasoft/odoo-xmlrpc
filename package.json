@@ -1,6 +1,6 @@
 {
     "name": "@intelica/odoo-xmlrpc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Intelica Odoo XMLRPC Interface",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -25,9 +25,11 @@
         "url": "git+https://github.com/intelicasoft/odoo-xmlrpc.git"
     },
     "keywords": [
-        "mailer",
-        "notifications",
-        "messaging"
+        "odoo",
+        "xmlrpc",
+        "contacts",
+        "employees",
+        "leads"
     ],
     "author": "Reinier Millo Sánchez <millo@intelica.mx>",
     "license": "MIT",

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.1] - 2022-04-21
+
+- Fix project documentation
+
 ## [1.0.0] - 2022-04-21
 
 - Initial project version
