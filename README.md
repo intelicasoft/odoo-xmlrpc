@@ -2,7 +2,7 @@
 
 Utility wrappers to interact with Odoo instance. Allow to handle defined Odoo data models without the requeriments to know the whole protocol.
 
-[![Version npm](https://img.shields.io/npm/v/@intelica/odoo-xmlrpc.svg?style=flat-square)](https://www.npmjs.com/package/@intelica/odoo-xmlrpc)[![npm Downloads](https://img.shields.io/npm/dm/@intelica/odoo-xmlrpc.svg?style=flat-square)](https://npmcharts.com/compare/@intelica/odoo-xmlrpc?minimal=true)[![Build Status](https://gitlab.com/ecualead/msg/badges/master/pipeline.svg)](https://gitlab.com/iecualead/msg)[![coverage testing report](https://gitlab.com/ecualead/msg/badges/master/coverage.svg)](https://gitlab.com/ecualead/msg/-/commits/master)
+[![Version npm](https://img.shields.io/npm/v/@intelica/odoo-xmlrpc.svg?style=flat-square)](https://www.npmjs.com/package/@intelica/odoo-xmlrpc)[![npm Downloads](https://img.shields.io/npm/dm/@intelica/odoo-xmlrpc.svg?style=flat-square)](https://npmcharts.com/compare/@intelica/odoo-xmlrpc?minimal=true)
 
 [![NPM](https://nodei.co/npm/@intelica/odoo-xmlrpc.png?downloads=true&downloadRank=true)](https://nodei.co/npm/@intelica/odoo-xmlrpc/)
 
