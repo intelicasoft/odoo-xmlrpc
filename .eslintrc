@@ -1,0 +1,71 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      }
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "no-console": 2,
+    "no-debugger": 2,
+    "no-empty": 2,
+    "no-extra-boolean-cast": 2,
+    "no-extra-parens": 1,
+    "no-extra-semi": 2,
+    "no-unexpected-multiline": 2,
+    "no-unreachable": 2,
+    "eqeqeq": 2,
+    "no-constructor-return": 2,
+    "no-else-return": 2,
+    "no-empty-function": 2,
+    "no-multi-spaces": 2,
+    "no-unused-vars": 1,
+    "no-use-before-define": 1,
+    "consistent-return": 1,
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ]
+  }
+}
