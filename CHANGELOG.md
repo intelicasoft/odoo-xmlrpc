@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.3] - 2022-09-29
+
+- Fix employee invalid `department` field
+
 ## [1.0.1] - 2022-04-21
 
 - Fix project documentation
