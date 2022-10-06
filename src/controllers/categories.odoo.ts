@@ -15,4 +15,12 @@ export class Categories extends OdooCRUD<ICategory> {
     super(MODEL_TYPE.EMPLOYEES, odoo);
     this._keys = ["id", "name"];
   }
+
+  searchByEmail(name: string): Promise<ICategory[]> {
+    return this.searchRead([["name", "=", name]]);
+  }
+
+  searchByPhone(name: string): Promise<ICategory[]> {
+    return this.searchRead([["name", "=", name]]);
+  }
 }

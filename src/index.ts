@@ -16,6 +16,7 @@ export { MODEL_TYPE, IServerVersion, IContact, ILead, IEmployee } from "./models
 export { Contacts } from "./controllers/contacts.odoo";
 export { Leads } from "./controllers/leads.odoo";
 export { Employees } from "./controllers/employees.odoo";
+export { Categories } from "./controllers/categories.odoo";
 
 /* Export models */
 export { ERRORS } from "./constants/errors.enum";
