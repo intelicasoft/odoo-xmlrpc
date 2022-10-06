@@ -12,8 +12,12 @@ import { OdooCRUD } from "./odoo.crud";
 
 export class Categories extends OdooCRUD<ICategory> {
   constructor(odoo: Odoo) {
-    super(MODEL_TYPE.EMPLOYEES, odoo);
+    super(MODEL_TYPE.CATEGORIES, odoo);
     this._keys = ["id", "name"];
+  }
+
+  public create(value: ICategory): Promise<number> {
+    return super.create(value);
   }
 
   searchByEmail(name: string): Promise<ICategory[]> {

@@ -1,6 +1,6 @@
 {
     "name": "@intelica/odoo-xmlrpc",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "description": "Intelica Odoo XMLRPC Interface",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
