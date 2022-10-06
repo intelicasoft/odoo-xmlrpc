@@ -10,7 +10,8 @@
 export enum MODEL_TYPE {
   CONTACTS = "res.partner",
   LEAD_OPPORTUNITY = "crm.lead",
-  EMPLOYEES = "hr.employee"
+  EMPLOYEES = "hr.employee",
+  CATEGORIES = "hr.employee.category"
 }
 
 export interface IServerVersion {
@@ -48,4 +49,8 @@ export interface IEmployee {
   work_email?: string;
   work_phone?: string;
   category_ids?: any[];
+}
+
+export interface ICategory {
+  name?: string;
 }

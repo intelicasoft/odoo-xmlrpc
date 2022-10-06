@@ -12,6 +12,7 @@ import { ERRORS } from "../constants/errors.enum";
 import { Contacts } from "./contacts.odoo";
 import { Employees } from "./employees.odoo";
 import { Leads } from "./leads.odoo";
+import { Categories } from "./categories.odoo";
 
 export class Odoo {
   private _client: Client;
@@ -74,7 +75,7 @@ export class Odoo {
     });
   }
 
-  public getModelActions(model: string): Contacts | Leads | Employees {
+  public getModelActions(model: string): Contacts | Leads | Employees | Categories {
     switch (model) {
       case MODEL_TYPE.CONTACTS:
         return new Contacts(this);
@@ -82,6 +83,8 @@ export class Odoo {
         return new Leads(this);
       case MODEL_TYPE.EMPLOYEES:
         return new Employees(this);
+      case MODEL_TYPE.CATEGORIES:
+          return new Categories(this);
     }
     throw new Error("Invalid model type");
   }
