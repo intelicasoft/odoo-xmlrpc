@@ -16,15 +16,15 @@ export class Categories extends OdooCRUD<ICategory> {
     this._keys = ["id", "name"];
   }
 
-  public create(value: ICategory): Promise<number> {
+  create(value: ICategory): Promise<number> {
     return super.create(value);
   }
 
-  searchByEmail(name: string): Promise<ICategory[]> {
-    return this.searchRead([["name", "=", name]]);
+  searchById(id: number): Promise<ICategory[]> {
+    return this.searchRead([["id", "=", id]]);
   }
 
-  searchByPhone(name: string): Promise<ICategory[]> {
+  searchByName(name: string): Promise<ICategory[]> {
     return this.searchRead([["name", "=", name]]);
   }
 }
