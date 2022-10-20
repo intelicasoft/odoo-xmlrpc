@@ -13,7 +13,7 @@ import { OdooCRUD } from "./odoo.crud";
 export class Employees extends OdooCRUD<IEmployee> {
   constructor(odoo: Odoo) {
     super(MODEL_TYPE.EMPLOYEES, odoo);
-    this._keys = ["id", "department", "name", "work_phone", "work_email", "category_ids"];
+    this._keys = ["id", "department_id", "name", "work_phone", "work_email", "category_ids"];
   }
 
   searchByEmail(email: string): Promise<IEmployee[]> {
