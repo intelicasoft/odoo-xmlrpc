@@ -8,11 +8,32 @@
     "target": "es6",
     "noImplicitAny": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "sourceMap": true,
     "outDir": "./lib",
     "baseUrl": ".",
-    "lib": ["ES2018"]
+    "lib": [
+      "ES2018",
+      "DOM"
+    ],
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", "tests/*.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "__mocks__",
+    "coverage",
+    "*.config.js",
+    "*.babel.js",
+    "specs",
+    "src/scripts",
+    "**/*.spec.ts",
+    "tests/*.ts"
+  ],
 }
